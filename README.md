@@ -1,37 +1,15 @@
-# moby
+# thesaurusJS
 
-[moby-thesaurus.org](http://moby-thesaurus.org) is a free and
+This project code is based on [moby-thesaurus.org](http://moby-thesaurus.org) which is a free and
 open-source website designed to facilitate meanderings through the [Moby
 Thesaurus](http://en.wikipedia.org/wiki/Moby_Project#Thesaurus), the largest
 thesaurus in the English language. As of version 1.0, this package also includes
 synonym data from the [Open Office thesaurus](http://goo.gl/UGBfHI).
 
-This git repository is many things:
+This modified git repository is:
 
-- The source code for the [moby-thesaurus.org](http://moby-thesaurus.org/) website.
-- A tiny and simple JavaScript interface for querying Moby Thesaurus and Open Office Thesaurus data.
-- A command-line interface (CLI) for searching a local, cached copy of the thesaurus from the terminal.
-- A module on npm called [moby](https://www.npmjs.org/package/moby).
-- Rad.
-
-## Browser Usage
-
-Go to [moby-thesaurus.org](http://moby-thesaurus.org/) and get lost in the associations.
-
-## Command Line Usage
-
-Install [node.js](http://nodejs.org/) if you don't already have it. Then:
-
-```sh
-npm install moby --global
-moby ecstasy
-```
-
-Display results one per line:
-
-```sh
-moby weird | tr , '\n'
-```
+A tiny and simple JavaScript interface for querying Moby Thesaurus and Open Office Thesaurus data.
+It currently supports the languages english and german but more can be added easily by using the [Openthesaurus Datasets](https://www.openthesaurus.de/about/download).
 
 ## Node.js Usage
 
@@ -40,7 +18,7 @@ Install moby in your project directory. The `--save` flags adds it to the list o
 
 ```sh
 cd my-project
-npm install moby --save
+npm install git+https://github.com/DavidM42/moby.git --save
 ```
 
 Then in your javascript code:
@@ -64,4 +42,11 @@ aware of any export restrictions so freely distribute world-wide.
 
 See also the Open Office license included in the
 [thesaurus](https://github.com/daizoru/node-thesaurus/blob/5cadf8d26ea879a6009702524970ce706f04bb99/LICENSE.txt)
-package.  
+package and the word dictionaries.  
+
+## TODO
+
+* Make way smaller
+  * By finding a way to include the dictionaries as non JS file in **browser** and in NodeJS
+  * Minification maybe?
+
