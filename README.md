@@ -34,6 +34,14 @@ console.log(thes.search('smaragdine'))
 console.log(thes.reverseSearch('smaragdine'))
 ```
 
+Or in your typescript code
+
+```ts
+import { ThesaurusTS } from 'thesaurus-ts';
+const thes = new ThesaurusTS();
+console.log(thes.search('mad'));
+```
+
 ## License
 
 Same license as the one on the [moby project homepage](http://icon.shef.ac.uk/Moby/):
